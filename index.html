@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <title>OOP-Library</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="app" class="row mt-2">
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <div class="card-header">
+                            ADD BOOKS
+                        </div>
+                        <form id="formAddBooks" class="card-body">
+                            <div class="form-group">
+                                <label for="bookName">Book:</label>
+                                <input type="text" class="form-control" name="bookName" id="bookName" placeholder="Book...">
+                            </div>
+                            <div class="form-group">
+                                <label for="author">Author:</label>
+                                <input type="text" class="form-control" name="author" id="author" placeholder="Author...">
+                            </div>
+                            <div class="form-group">
+                                <label for="sinopsis">Sinopsis:</label>
+                                <textarea type="text" class="form-control" name="sinopsis" id="sinopsis" placeholder="Sinopsis..."></textarea>
+                            </div>
+                            <input type="submit" value="Save!" id="btnSave" class="btn btn-primary btn-lg btn-block">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex flex-column flex-column-reverse" id="bookList">
+                    <div class="card mb-3 w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Juego de tronos: In memoriam</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum.</h6>
+                            <p class="card-text">Este es un libro que busca mantener en el recuerdo a todos los personajes que han pasado por la serie de forma tal que todos sus seguidores puedan recordarlos permanentemente.</p>
+                            <a href="#" class="btn btn-danger" name="delete">Delete book</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3 w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">La espada leal</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum dolor.</h6>
+                            <p class="card-text">Segundo libro de la adaptación gráfica del ciclo «Cuentos de Dunk y Egg: El caballero de los Siete Reinos», la precuela de la saga «Canción de Hielo y Fuego»</p>
+                            <a href="#" class="btn btn-danger" name="delete">Delete book</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3 w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lorem ipsum dolor sit.</h6>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus quis voluptate ipsum cupiditate? Obcaecati nesciunt culpa aspernatur ea suscipit, assumenda recusandae fuga neque beatae eligendi autem provident temporibus officiis explicabo!</p>
+                            <a href="#" class="btn btn-danger" name="delete">Delete book</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
